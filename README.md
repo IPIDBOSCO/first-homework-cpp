@@ -9,7 +9,7 @@ Tu tarea es contar cuántas calificaciones son válidas, es decir, cuántas son 
 2. La función debe retornar el número de calificaciones válidas en el arreglo.
 3. Prueba lo que realizando usando el test proporcionado
 
-``bash
+```bash
 make test
 ```
 
