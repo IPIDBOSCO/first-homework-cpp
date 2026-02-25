@@ -6,8 +6,8 @@ TEST_CASE("Contar calificaciones validas") {
     int calificaciones1[] = {5, 3, -1, 4, -2, 0};
     REQUIRE(contarCalificacionesValidas(calificaciones1, 6) == 4);
 
-    int calificaciones2[] = {-5, -3, -1, -4, -2, -0};
-    REQUIRE(contarCalificacionesValidas(calificaciones2, 6) == 0);
+    int calificaciones2[] = {-5, -3, -1, -4, -2, 0};
+    REQUIRE(contarCalificacionesValidas(calificaciones2, 6) == 1);
 
     int calificaciones3[] = {5, 3, 1, 4, 2, 0};
     REQUIRE(contarCalificacionesValidas(calificaciones3, 6) == 6);
