@@ -14,6 +14,5 @@ using namespace std;
 
 int contarCalificacionesValidas(int calificaciones[], int tamaño) {
     // Tu código aquí
-
     return -1;
 }
