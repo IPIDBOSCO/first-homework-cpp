@@ -13,7 +13,8 @@ else
 endif
 
 ifeq ($(DETECTED_OS), Windows)
-	COMMAND = $(CXX) $(CXXFLAGS) $(TEST_DIR)/test_main.cpp -o test_main.exe && ./test_main.exe 
+	COMMAND = $(CXX) $(CXXFLAGS) $(TEST_DIR)/test_main.cpp -o test_main.exe
+	WIN = ./test_main.exe 
 else
 	COMMAND = $(CXX) $(CXXFLAGS) $(TEST_DIR)/test_main.cpp -o test_main.out && ./test_main.out
 endif
@@ -26,6 +27,7 @@ all:
 test:
 	@echo "Running tests on $(DETECTED_OS)..."
 	$(COMMAND)
+	$(WIN)
 
 clean:
 	@echo "Cleaning up..."
